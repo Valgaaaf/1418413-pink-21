@@ -4,9 +4,156 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="body">
+    <header class="page-header">
+      <nav class="page-header__navigation">
+         <div class="navigation__top-menu">
+            <svg class="navigation__logo" width="" height=""></svg>
+            <button class="navigation__button-menu" type="button">
+                <svg class="navigation__nav-icon"></svg>
+            </button>
+         </div>
+         <ul class="navigation__menu-list">
+           <li class="navigation__menu-item">
+             <a>Главная</a>
+           </li>
+           <li class="navigation__menu-item">
+             <a>Фотографии</a>
+           </li>
+           <li class="navigation__menu-item">
+             <a>Конкурс</a>
+           </li>
+           <li class="navigation__menu-item">
+             <a>html academy</a>
+           </li>
+         </ul>
+      </nav>
+    </header>
+    <main class="page-content">
+      <h1 class="visually-hidden">Приложкние "Pink"</h1>
+      <sectin class="page-content__get-app">
+         <h2 class="visually-hidden">Установи "Pink"</h2>
+          <p class="get-app__slogan">Взгляните на жизнь иначе!</p>
+          <a class="get-app__button">Скачать приложение</a>
+          <div class="get-app__operating-system">
+            <ul class="operating-system__list">
+              <li class="operating-system__item">
+                <a class="operating-system__link-apple"></a>
+              </li>
+              <li class="operating-system__item">
+                <a class="operating-system__link-android"></a>
+              </li>
+              <li class="operating-system__item">
+                <a class="operating-system__link-windows"></a>
+              </li>
+            </ul>
+            <p class="operating-system__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+      </sectin>
+      <section class="page-content__features">
+        <div class="features__intro-wrapper">
+          <p class="features__intro">Устали от серости мегаполиса?</p>
+          <p class="features__intro">Нам есть, что вампредложить!</p>
+        </div>
+        <div class="features__list-wrapper">
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__header">Поднимает настроение</h3>
+              <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__header">Меняет мир вокруг</h3>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+             <li class="features__item">
+              <h3 class="features__header">Заводит новых друзей</h3>
+              <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page-content__effect">
+        <div class="effect__wrapper">
+          <h2 class="effect__header">Эффект на 24 часа!</h2>
+          <p class="effect__header">Британские ученые</p>
+          <a class="effect__link">Узнать больше об иследовании</a>
+        </div>
+      </section>
+      <section class="page-content__reviews">
+         <div class="container">
+            <h2 class="visually-hidden">Отзывы пользователей</h2>
+            <div class="reviews__wrapper">
+              <ul class="reviews_list">
+                <li class="reviews_item">
+                  <h3 class="reviews_header-autor">Николай Петров</h3>
+                  <p class="reviews_header-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </li>
+              </ul>
+              <div class="slider__toggles-wrapper">
+                <span class="slider__toggle">1</span>
+                <span class="slider__toggle">2</span>
+                <span class="slider__toggle">3</span>
+              </div>
+            </div>
+         </div>
+      </section>
+      <section class="page-content__tari">
+        <div class="container">
+          <h2 class="visually-hidden">Пакеты "Pink"</h2>
+          <div class="tariffs__wrapper">
+            <ul class="tariffs__list">
+              <li class="tariffs__item"></li>
+              <li class="tariffs__item"></li>
+              <li class="tariffs__item"></li>
+              <li class="tariffs__item"></li>
+            </ul>
+            <div class="slider__toggles-wrapper">
+                <span class="slider__toggle">1</span>
+                <span class="slider__toggle">2</span>
+                <span class="slider__toggle">3</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-content__contacts">
+        <div class="container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+          <div class="contacts__wrapper">
+            <h3 class="contacts__header">Звоните:</h3>
+            <a class="contacts__link-phone">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__wrapper">
+            <h3 class="contacts__header">Пишите</h3>
+            <a class="contacts__link-phone">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__wrapper">
+            <h3 class="contacts__header">Приезжайте в гости:</h3>
+            <a class="contacts__link-phone">ул. Большая Конюшенная, 19/8</a>
+          </div>
+        </div>
+        <div class="contacts__map-wrapper">
+          <picture></picture>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <svg class="page-footer__logo"></svg>
+      <div class="page-footer__social-wrapper">
+        <ul class="page-footer__social-block">
+          <li class="social-block__item">
+            <a class="social-block__link">Twitter</a>
+            <a class="social-block__link">Facebook</a>
+            <a class="social-block__link">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <span class="copyright__tex">Разработано</span>
+        <a class="copyright__link" href="#"></a>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>
