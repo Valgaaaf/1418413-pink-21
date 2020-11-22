@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Олег Ткаченко](https://up.htmlacademy.ru/adaptive/21/user/1418413).
-* Наставник: [Анастасия Ничипорчук](https://htmlacademy.ru/profile/id612797)..
+* Наставник: [Анастасия Ничипорчук](https://htmlacademy.ru/profile/id612797).
 
 ---
 
