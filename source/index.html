@@ -3,15 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <header class="page-header">
       <nav class="page-header__navigation navigation">
-          <div class="navigation__top-menu">
-            <svg class="navigation__logo" width="" height=""></svg>
+         <div class="container container--nav-mobile">
+           <div class="navigation__top-menu">
+            <svg class="navigation__logo" width="74px" height="23px"></svg>
             <button class="navigation__button-menu" type="button">
 
             </button>
+           </div>
           </div>
           <ul class="navigation__menu-list">
             <li class="navigation__menu-item">
@@ -31,10 +38,10 @@
     </header>
     <main class="page-content">
       <h1 class="visually-hidden page-content__title">Приложение "Pink"</h1>
-      <sectin class="page-content__get-app get-app">
+      <section class="page-content__get-app get-app">
           <h2 class="visually-hidden">Установи "Pink"</h2>
           <p class="get-app__slogan">Взгляните на жизнь иначе!</p>
-          <a class="get-app__button">Скачать приложение</a>
+          <a class="get-app__button button">Скачать приложение</a>
           <div class="get-app__operating-system operating-system">
             <ul class="operating-system__list">
               <li class="operating-system__item">
@@ -49,7 +56,7 @@
             </ul>
             <p class="operating-system__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-      </sectin>
+      </section>
       <section class="page-content__features features">
         <div class="features__intro-wrapper">
           <p class="features__intro">Устали от серости мегаполиса?</p>
@@ -142,11 +149,11 @@
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
           <div class="contacts__wrapper">
             <h3 class="contacts__header">Звоните:</h3>
-            <a href="#" class="contacts__link-phone">+7 (812) 555-66-66</a>
+            <a href="tel:+78125556666" class="contacts__link-phone">+7 (812) 555-66-66</a>
           </div>
           <div class="contacts__wrapper">
             <h3 class="contacts__header">Пишите</h3>
-            <a href="https://htmlacademy.ru" class="contacts__link-phone">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link-phone">mail@htmlacademy.ru</a>
           </div>
           <div class="contacts__wrapper">
             <h3 class="contacts__header">Приезжайте в гости:</h3>
@@ -176,7 +183,7 @@
       </div>
       <div class="page-footer__copyright">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/21/project/pink#pink-3-9" title="Html-Academy"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Html-Academy"></a>
       </div>
       </div>
     </footer>
