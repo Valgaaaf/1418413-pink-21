@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
@@ -9,36 +9,41 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
   </head>
-  <body class="body">
-    <header class="page-header">
-      <nav class="page-header__navigation navigation">
-         <div class="container container--nav-mobile">
-           <div class="navigation__top-menu">
-            <svg class="navigation__logo" width="74px" height="23px"></svg>
-            <button class="navigation__button-menu" type="button">
-
-            </button>
-           </div>
+  <body class="page__body">
+  <!Шапка сайта>
+    <header class="page-header"><!Логотип>
+      <a class="peage-header__logo"><img class="page-header__logo-image" width="74" height="23" src="img/logo-pink.svg" alt="Логотип Pink">
+      </a>
+      <!Блок навигации>
+      <nav class="main-nav">
+      <!Кнопка переключения бургер меню навигации>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <!Список навигации>
+          <div class="main-nav__wrapper">
+          <!Элементы списка навигации>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--activ">
+                <a href="#">Главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item--activ">
+                <a href="#">Фотографии</a>
+              </li>
+              <li class="main-nav__item main-nav__item--activ">
+                <a href="#">Конкурс</a>
+              </li>
+              <li class="main-nav__item main-nav__item--activ">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
           </div>
-          <ul class="navigation__menu-list">
-            <li class="navigation__menu-item">
-              <a>Главная</a>
-            </li>
-            <li class="navigation__menu-item">
-              <a>Фотографии</a>
-            </li>
-            <li class="navigation__menu-item">
-              <a>Конкурс</a>
-            </li>
-            <li class="navigation__menu-item">
-              <a>html academy</a>
-            </li>
-          </ul>
+        </button>
       </nav>
     </header>
-    <main class="page-content">
-      <h1 class="visually-hidden page-content__title">Приложение "Pink"</h1>
-      <section class="page-content__get-app get-app">
+    <!Основной контент>
+    <main class="page-main">
+      <h1 class="visually-hidden ">Приложение "Pink"</h1>
+      <section class="page-content">
           <h2 class="visually-hidden">Установи "Pink"</h2>
           <p class="get-app__slogan">Взгляните на жизнь иначе!</p>
           <a class="get-app__button button">Скачать приложение</a>
