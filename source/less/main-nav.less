@@ -1,5 +1,94 @@
 .main-nav {
-  background-color: red;
+  position: relative;
+  width: auto;
+  min-height: 69px;
+
+  @media (min-width: @tablet-width) {
+    background-color: #000000;
+    opacity: ;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  z-index: 3;
+  display: block;
+  width: 50px;
+  height: 24px;
+  background-color: #0b1724;
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active {
+    background-color: #24303d;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#ffffff, 30%),
+    0 16px 0 0 fade(#ffffff, 30%);
+}
+
+@media (max-width: @mobile-whidth-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--closed .user-list__item {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 21px;
+  right: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 7px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+    &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+&:active::before,
+&:active::after {
+  background-color: fade(#ffffff, 30%);
 }
 
 .main-nav__list {
@@ -9,7 +98,19 @@
 }
 
 .main-nav__list a {
+  position: relative;
+  display: block;
+  padding: 18px 24px;
+  padding-bottom: 13px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
   color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #0b1724;
+  border-top: 1px solid #060d14;
+  border-bottom: 1px solid #84b0db;
 }
 
 @media (min-width: @deskstop-width) {
